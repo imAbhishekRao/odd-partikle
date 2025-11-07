@@ -1,14 +1,20 @@
+"use client";
+
+import { useState } from "react";
 import Intro from "./components/Intro";
 import WorkSection from "./components/WorkSection";
 import WorkSvg from "./components/WorkSvg";
 import ProjectsGrid from "./components/ProjectsGrid";
 import Services from "./components/Services";
 import ImageCollage from "./components/ImageCollage";
+import AnimatedSection from "./components/AnimatedSection";
 
 export default function Home() {
+  const [isAnimatedSectionOpen, setIsAnimatedSectionOpen] = useState(false);
+
   return (
     <main className="bg-white text-black font-sans">
-      <Intro />
+      <Intro onBlackDotClick={() => setIsAnimatedSectionOpen(true)} />
       <WorkSection />
       <WorkSvg />
       <ProjectsGrid />
@@ -23,6 +29,12 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {/* Animated Section */}
+      <AnimatedSection
+        isOpen={isAnimatedSectionOpen}
+        onClose={() => setIsAnimatedSectionOpen(false)}
+      />
     </main>
   );
 }

@@ -1,4 +1,10 @@
-export default function Intro() {
+"use client";
+
+interface IntroProps {
+  onBlackDotClick: () => void;
+}
+
+export default function Intro({ onBlackDotClick }: IntroProps) {
   return (
     <section className="relative w-full bg-white min-h-screen flex items-end">
       <div className="mx-auto max-w-6xl px-6 py-24 md:py-28 w-full">
@@ -16,8 +22,14 @@ export default function Intro() {
         </a>
       </div>
 
-      {/* top-right black dot */}
-      <div className="pointer-events-none absolute right-6 top-8 h-3 w-3 rounded-full bg-black" />
+      {/* top-right black dot - clickable with larger cursor area */}
+      <button
+        onClick={onBlackDotClick}
+        className="absolute right-6 top-8 p-4 -m-4 cursor-large"
+        aria-label="Open animated section"
+      >
+        <span className="h-3 w-3 rounded-full bg-black hover:opacity-70 transition-opacity block" />
+      </button>
     </section>
   );
 }
