@@ -26,7 +26,7 @@ export default function WorkSection() {
   return (
     <section className="relative w-full overflow-hidden pb-0">
       {/* Grey background container - limited height */}
-      <div className="absolute inset-0 bg-zinc-100" style={{ height: 'calc(100% - 100px)' }}></div>
+      <div className="absolute inset-0 bg-zinc-100" style={{ height: 'calc(100% - 50px)' }}></div>
       
       <div className="ml-[150px] mr-[150px] pt-24 pb-0 w-[calc(100%-300px)] relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-0">
@@ -50,7 +50,7 @@ export default function WorkSection() {
       <div 
         ref={svgRef}
         className="w-full overflow-hidden mb-0 pb-0 relative z-10"
-        style={{ clipPath: "inset(0 0 20% 0)" }}
+        style={{ clipPath: "inset(0 0 15% 0)" }}
       >
         <Image
           src="/work.svg"
