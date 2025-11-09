@@ -49,7 +49,7 @@ export default function WorkSection() {
       {/* Work SVG below text and box - with parallax and bottom crop, full width */}
       <div 
         ref={svgRef}
-        className="w-full overflow-hidden mb-0 pb-0 relative z-10"
+        className="w-full overflow-hidden mb-0 pb-0 mt-8 relative z-10"
         style={{ clipPath: "inset(0 0 15% 0)" }}
       >
         <Image
