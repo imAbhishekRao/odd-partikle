@@ -16,7 +16,7 @@ export default function Intro({ onBlackDotClick }: IntroProps) {
         </p>
         <a
           href="#"
-          className="mt-10 inline-flex text-sm text-zinc-500 hover:text-black"
+          className="mt-10 inline-flex text-sm text-zinc-500 hover:text-black font-medium"
         >
           The black dot ↗
         </a>
@@ -25,7 +25,7 @@ export default function Intro({ onBlackDotClick }: IntroProps) {
       {/* top-right black dot - clickable with larger cursor area */}
       <button
         onClick={onBlackDotClick}
-        className="absolute right-[200px] top-8 p-4 -m-4 cursor-large"
+        className="absolute right-[200px] top-[100px] p-4 -m-4 cursor-large"
         aria-label="Open animated section"
       >
         <span className="h-3 w-3 rounded-full bg-black hover:opacity-70 transition-opacity block" />
