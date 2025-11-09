@@ -8,7 +8,7 @@ export default function Intro({ onBlackDotClick }: IntroProps) {
   return (
     <section className="relative w-full bg-white min-h-screen flex items-center">
       <div className="py-24 md:py-28 ml-[200px] mr-[200px] w-full">
-        <p className="text-[28px] leading-[1.25] md:text-[40px] md:leading-tight text-zinc-400 max-w-4xl">
+        <p className="text-[28px] leading-[1.25] md:text-[40px] md:leading-tight text-zinc-400 ">
           <span className="text-black font-semibold">Oddpartikle</span>{" "}is an independent design and technology studio with a clear purpose: to craft communication that builds authentic and meaningful connections with people.
         </p>
         <a
