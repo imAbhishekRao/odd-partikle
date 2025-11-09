@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <section className="relative w-full bg-white py-24 md:py-28">
-      <div className="mx-auto max-w-6xl px-6 w-full">
+      <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         <div className="max-w-4xl">
           <p className="text-[24px] leading-[1.25] md:text-[32px] md:leading-tight text-zinc-400">
             We help you to{" "}

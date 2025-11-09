@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ProjectsGrid() {
   return (
     <section className="w-full bg-zinc-100 py-12 md:py-16 lg:py-24">
-      <div className="mx-auto max-w-6xl px-6 w-full">
+      <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First Row - Image 1 */}
           <div className="flex-1">
@@ -14,7 +14,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
@@ -31,7 +31,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
@@ -48,7 +48,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
@@ -65,7 +65,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
@@ -82,7 +82,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
@@ -99,7 +99,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
@@ -116,7 +116,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
             <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">

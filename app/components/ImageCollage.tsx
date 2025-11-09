@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ImageCollage() {
   return (
     <section className="relative w-full bg-zinc-100 py-12 md:py-16 lg:py-24">
-      <div className="mx-auto max-w-6xl px-6 w-full">
+      <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         {/* Images Row */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center mb-12 md:mb-16">
           {/* Portrait image */}
@@ -15,7 +15,7 @@ export default function ImageCollage() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function ImageCollage() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function ImageCollage() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ImageCollage() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function ImageCollage() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover rounded-sm shadow-lg"
+                className="w-full h-full object-cover shadow-lg"
               />
             </div>
           </div>
