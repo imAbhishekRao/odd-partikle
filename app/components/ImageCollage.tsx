@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ImageCollage() {
   return (
-    <section className="relative w-full bg-zinc-100 py-12 md:py-16 lg:py-24">
+    <section className="relative w-full bg-white py-12 md:py-16 lg:py-24">
       <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         {/* Images Row */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center mb-12 md:mb-16">

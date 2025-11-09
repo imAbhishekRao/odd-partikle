@@ -39,7 +39,7 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
 
       {/* Content Section */}
       {showContent && (
-        <div className="relative z-10 w-full h-full flex items-center justify-center bg-zinc-50">
+        <div className="relative z-10 w-full h-full flex items-center justify-center bg-white">
           <div className="relative w-full max-w-4xl px-6 py-24">
             {/* Three dots icon in top right */}
             <button

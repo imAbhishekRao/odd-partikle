@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectsGrid() {
   return (
-    <section className="w-full bg-zinc-100 py-12 md:py-16 lg:py-24">
+    <section className="w-full bg-white py-12 md:py-16 lg:py-24">
       <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First Row - Image 1 */}
