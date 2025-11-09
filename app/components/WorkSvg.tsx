@@ -3,16 +3,6 @@ import Image from "next/image";
 export default function WorkSvg() {
   return (
     <section className="w-full bg-zinc-100">
-      <div className="w-full">
-            <Image
-              src="/work.svg"
-              alt="WORK"
-              width={1886}
-              height={546}
-              priority={false}
-              className="w-full h-auto select-none pointer-events-none"
-            />
-          </div>
       <div className="w-full bg-zinc-100 py-12 md:py-16 lg:py-24">
         <div className="mx-auto max-w-6xl px-6 w-full">
           <div className="relative w-full aspect-[4/3] max-h-[600px]">
