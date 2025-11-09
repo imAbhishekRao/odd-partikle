@@ -50,7 +50,7 @@ export default function WorkSection() {
       <div 
         ref={svgRef}
         className="w-full overflow-hidden mb-0 pb-0 mt-8 relative z-10"
-        style={{ clipPath: "inset(0 0 15% 0)" }}
+        style={{ clipPath: "inset(0 0 18% 0)" }}
       >
         <Image
           src="/work.svg"
