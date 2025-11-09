@@ -7,7 +7,7 @@ interface IntroProps {
 export default function Intro({ onBlackDotClick }: IntroProps) {
   return (
     <section className="relative w-full bg-white min-h-screen flex items-center">
-      <div className="py-24 md:py-28 ml-[200px] mr-[200px] w-full">
+      <div className="py-24 md:py-28 ml-[150px] mr-[150px] w-full">
         <p className="text-[42px] leading-[1.25] text-[#b3b3b3] ">
           <span className="text-black font-medium">Oddpartikle</span>{" "}is an independent design and technology studio with a clear purpose: to craft communication that builds authentic and meaningful connections with people.
         </p>
@@ -22,7 +22,7 @@ export default function Intro({ onBlackDotClick }: IntroProps) {
       {/* top-right black dot - clickable with larger cursor area */}
       <button
         onClick={onBlackDotClick}
-        className="absolute right-[200px] top-[100px] p-4 -m-4 cursor-large"
+        className="absolute right-[150px] top-[100px] p-4 -m-4 cursor-large"
         aria-label="Open animated section"
       >
         <span className="h-3 w-3 rounded-full bg-black hover:opacity-70 transition-opacity block" />

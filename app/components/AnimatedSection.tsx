@@ -33,7 +33,7 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
         className={`absolute rounded-full bg-black transition-all duration-700 ease-out ${
           showCircle
             ? "w-[200vw] h-[200vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            : "w-3 h-3 top-[100px] right-[200px]"
+            : "w-3 h-3 top-[100px] right-[150px]"
         }`}
       />
 
