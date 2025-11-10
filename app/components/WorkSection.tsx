@@ -56,39 +56,16 @@ export default function WorkSection() {
             !hasScrolled.current
           ) {
             hasScrolled.current = true;
+            // Normal speed smooth scroll to bring section fully into view
+            entry.target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
             
-            // Smooth scroll animation
-            const targetPosition = entry.target.getBoundingClientRect().top + window.scrollY;
-            const startPosition = window.scrollY;
-            const distance = targetPosition - startPosition;
-            const duration = 800; // 0.8 seconds for faster animation
-            let startTime: number | null = null;
-
-            const easeInOutCubic = (t: number): number => {
-              return t < 0.5
-                ? 4 * t * t * t
-                : 1 - Math.pow(-2 * t + 2, 3) / 2;
-            };
-
-            const animateScroll = (currentTime: number) => {
-              if (startTime === null) startTime = currentTime;
-              const timeElapsed = currentTime - startTime;
-              const progress = Math.min(timeElapsed / duration, 1);
-              const easedProgress = easeInOutCubic(progress);
-
-              window.scrollTo(0, startPosition + distance * easedProgress);
-
-              if (progress < 1) {
-                requestAnimationFrame(animateScroll);
-              } else {
-                // Reset after scroll completes
-                setTimeout(() => {
-                  hasScrolled.current = false;
-                }, 500);
-              }
-            };
-
-            requestAnimationFrame(animateScroll);
+            // Reset after scroll completes
+            setTimeout(() => {
+              hasScrolled.current = false;
+            }, 1000);
           }
         });
       },
