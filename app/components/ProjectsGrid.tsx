@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectsGrid() {
   return (
-    <section className="w-full bg-white py-12 md:py-16 lg:py-24">
+    <section className="relative w-full bg-white py-12 md:py-16 lg:py-24 z-50">
       <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First Row - Image 1 */}
@@ -17,8 +17,8 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              GD GOENKA - Thrive. For Life.
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">GD GOENKA</span> - Thrive. For Life.
             </p>
           </div>
 
@@ -34,8 +34,8 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              TARC Kailāsa - Patel Road, New Delhi
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">TARC Kailāsa</span> - Patel Road, New Delhi
             </p>
           </div>
 
@@ -51,8 +51,8 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              Project 4
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">Project 4</span>
             </p>
           </div>
 
@@ -68,8 +68,8 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              Project 5
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">Project 5</span>
             </p>
           </div>
 
@@ -85,8 +85,8 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              Project 6
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">Project 6</span>
             </p>
           </div>
 
@@ -102,8 +102,8 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              Project 7
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">Project 7</span>
             </p>
           </div>
 
@@ -119,16 +119,16 @@ export default function ProjectsGrid() {
                 className="w-full h-full object-cover shadow-lg"
               />
             </div>
-            <p className="mt-6 text-black text-xl md:text-2xl font-normal text-left">
-              Project 8
+            <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+              <span className="text-black font-medium">Project 8</span>
             </p>
           </div>
         </div>
 
         {/* View All Projects Section */}
         <div className="mt-16 md:mt-20">
-          <h2 className="text-black text-2xl md:text-3xl font-bold mb-12 text-left">
-            View All Projects
+          <h2 className="text-[42px] leading-[1.25] text-[#b3b3b3] mb-12 text-left">
+            <span className="text-black font-medium">View All Projects</span>
           </h2>
           <div className="w-full border-t border-black"></div>
         </div>

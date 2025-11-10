@@ -21,14 +21,6 @@ export default function Home() {
       <Services />
       <ImageCollage />
       
-      {/* Footer Copyright */}
-      <footer className="w-full bg-white py-6 border-t border-zinc-200">
-        <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
-          <p className="text-zinc-600 text-xs md:text-sm text-center">
-            ©Oddpartikle
-          </p>
-        </div>
-      </footer>
 
       {/* Animated Section */}
       <AnimatedSection
