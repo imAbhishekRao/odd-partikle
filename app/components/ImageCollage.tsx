@@ -93,9 +93,9 @@ export default function ImageCollage() {
 
         {/* Footer Section */}
         <footer className="mt-16 md:mt-20 pt-8 border-t border-black">
-          <div className="flex flex-col md:flex-row justify-between gap-8 items-start md:items-center">
+          <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
             {/* Left Side - Navigation Links */}
-            <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-32">
               <div className="flex flex-col gap-2">
                 <a href="#" className="text-black hover:opacity-70 text-sm md:text-base">
                   Home

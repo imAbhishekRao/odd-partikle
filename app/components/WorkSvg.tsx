@@ -15,7 +15,7 @@ export default function WorkSvg() {
               className="w-full h-full object-cover shadow-lg"
             />
           </div>
-          <p className="mt-6 text-[42px] leading-[1.25] text-[#b3b3b3] text-left">
+          <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
             <span className="text-black font-medium">TARC</span> - Inspired by India
           </p>
         </div>
