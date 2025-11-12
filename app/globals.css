@@ -33,3 +33,16 @@ body {
 .cursor-large {
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='%23000'/%3E%3C/svg%3E") 10 10, auto !important;
 }
+
+/* Bigger circle cursor for all clickable elements */
+a,
+button,
+[role="button"],
+[onclick],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+label[for],
+.cursor-pointer {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='%23000'/%3E%3C/svg%3E") 10 10, auto !important;
+}

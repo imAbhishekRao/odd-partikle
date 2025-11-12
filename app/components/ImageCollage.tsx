@@ -79,8 +79,8 @@ export default function ImageCollage() {
 
         {/* Introductory Text */}
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-[24px] text-[#b3b3b3] max-w-3xl mx-auto">
-            By digging deep, asking the right questions, and aligning on what truly matters, we offer a glimpse into our collaborative discovery sessions with the leadership teams at <span className="text-black font-medium">TARC</span> and <span className="text-black font-medium">GD Goenka</span>.
+          <p className="text-[18px] leading-[1.6] text-black max-w-4xl mx-auto">
+            By digging deep, asking the right questions, and aligning on what truly matters, we offer a glimpse into our collaborative discovery sessions with the leadership teams at <span className="font-medium">TARC</span> and <span className="font-medium">GD Goenka</span>.
           </p>
         </div>
 

@@ -85,7 +85,7 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
           </button>
           <div className="relative w-full max-w-4xl px-6 py-0">
             {/* Main Text */}
-            <p className="text-[28px] leading-[1.4] md:text-[40px] md:leading-tight text-zinc-400">
+            <p className="text-[28px] leading-[1.4] md:text-[40px] md:leading-tight text-[#1a1a1a]">
               It started with a{" "}
               <a
                 href="#thought"

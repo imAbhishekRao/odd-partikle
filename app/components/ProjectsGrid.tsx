@@ -4,7 +4,7 @@ export default function ProjectsGrid() {
   return (
     <section className="relative w-full bg-white py-12 md:py-16 lg:py-24 z-50">
       <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {/* First Row - Image 1 */}
           <div className="flex-1 mt-5">
             <div className="relative w-full aspect-square max-h-[600px]">
@@ -14,7 +14,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover shadow-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
@@ -31,7 +31,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover shadow-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
@@ -40,7 +40,7 @@ export default function ProjectsGrid() {
           </div>
 
           {/* Second Row - Image 3 */}
-          <div className="flex-1 mt-10">
+          <div className="flex-1 -mt-20 md:-mt-24 lg:-mt-32">
             <div className="relative w-full aspect-square max-h-[600px]">
               <Image
                 src="/Home Assets-03.svg"
@@ -48,7 +48,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover shadow-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
@@ -57,7 +57,7 @@ export default function ProjectsGrid() {
           </div>
 
           {/* Second Row - Image 4 */}
-          <div className="flex-1" style={{ marginTop: 'calc(40px + 300px)' }}>
+          <div className="flex-1" style={{ marginTop: 'calc(40px + 300px)', transform: 'translateY(-80px)' }}>
             <div className="relative w-full aspect-square max-h-[600px]">
               <Image
                 src="/Home Assets-04.svg"
@@ -65,7 +65,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover shadow-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
@@ -74,7 +74,7 @@ export default function ProjectsGrid() {
           </div>
 
           {/* Third Row - Image 5 */}
-          <div className="flex-1 mt-20">
+          <div className="flex-1 -mt-24 md:-mt-28 lg:-mt-36">
             <div className="relative w-full aspect-square max-h-[600px]">
               <Image
                 src="/Home Assets-05.svg"
@@ -82,7 +82,7 @@ export default function ProjectsGrid() {
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover shadow-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
@@ -91,15 +91,15 @@ export default function ProjectsGrid() {
           </div>
 
           {/* Third Row - Image 6 */}
-          <div className="flex-1" style={{ marginTop: 'calc(80px + 300px)' }}>
-            <div className="relative w-full aspect-square" style={{ maxHeight: '300px' }}>
+          <div className="flex-1 -mt-24 md:-mt-32 lg:-mt-1">
+            <div className="relative w-full aspect-square" style={{ maxHeight: '400px' }}>
               <Image
                 src="/Home Assets-06.svg"
                 alt="Project 7"
                 width={800}
                 height={600}
                 priority={false}
-                className="w-full h-full object-cover shadow-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <p className="mt-6 text-[28px] leading-[1.25] text-[#b3b3b3] text-left">
