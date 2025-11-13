@@ -9,15 +9,15 @@ export default function Footer() {
           <a href="#privacy" className="hover:opacity-80">Privacy</a>
           <a href="#terms" className="hover:opacity-80">Terms</a>
         </div>
-        <div className="flex items-start">
-          <Image
-            src="/Oddpartikle_logo.svg"
-            alt="Oddpartikle Logo"
-            width={246}
-            height={41}
-            className="h-5 w-auto"
-          />
-        </div>
+      </div>
+      <div className="flex justify-end -mt-0" style={{ marginRight: '150px' }}>
+        <Image
+          src="/Oddpartikle_logo.svg"
+          alt="Oddpartikle Logo"
+          width={246}
+          height={41}
+          className="h-2 w-auto"
+        />
       </div>
     </footer>
   );
