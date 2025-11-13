@@ -69,10 +69,14 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
       {/* Content Section - appears immediately */}
       {showContent && (
         <div className="relative z-30 w-full h-full flex items-center justify-center bg-black">
-          {/* Close button - same position as open button */}
+          {/* Close button - centered on the black dot center point */}
           <button
             onClick={onClose}
-            className="fixed right-[150px] top-[100px] p-4 -m-4 z-40 hover:opacity-70 transition-opacity"
+            className="fixed z-40 hover:opacity-70 transition-opacity"
+            style={{ 
+              right: '120px', 
+              top: '106px',
+            }}
             aria-label="Close animated section"
           >
             <Image 
@@ -81,6 +85,7 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
               width={43} 
               height={43}
               className="block"
+              style={{ transform: 'translate(-50%, -50%)' }}
             />
           </button>
           <div className="relative w-full max-w-4xl px-6 py-0">
