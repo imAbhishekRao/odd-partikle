@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ImageCollage() {
   return (
-    <section className="relative w-full bg-zinc-100 pt-12 md:pt-16 lg:pt-24 pb-0 z-50">
+    <section className="relative w-full pt-0 pb-0 z-50 -mt-[1px]" style={{ backgroundColor: '#e1e2dc' }}>
       <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
         {/* Images Row */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center mb-12 md:mb-16">
@@ -80,7 +80,7 @@ export default function ImageCollage() {
         {/* Introductory Text */}
         <div className="text-center mb-12 md:mb-16">
           <p className="text-[18px] leading-[1.6] text-black max-w-4xl mx-auto">
-            By digging deep, asking the right questions, and aligning on what truly matters, we offer a glimpse into our collaborative discovery sessions with the leadership teams at <span className="font-medium">TARC</span> and <span className="font-medium">GD Goenka</span>.
+            By digging deep, asking the right questions, and aligning on what truly matters, we offer a glimpse into our collaborative discovery sessions with the leadership teams at TARC and GD Goenka.
           </p>
         </div>
 

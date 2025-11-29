@@ -19,12 +19,6 @@ export default function WorkSection() {
         
         // Use same scroll progress for all elements so they move together
         if (scrollProgress > 0 && scrollProgress < 1.5) {
-          // SVG parallax - moves at same pace as section
-          if (svgRef.current) {
-            const parallaxOffset = scrollProgress * 50;
-            svgRef.current.style.transform = `translateY(${parallaxOffset}px)`;
-          }
-
           // Text parallax - moves up slower
           if (textRef.current && scrollProgress > 0 && scrollProgress < 1) {
             const textOffset = scrollProgress * -30;
@@ -86,9 +80,9 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full overflow-hidden pb-0 -mb-9 z-50 bg-zinc-100">
+    <section ref={sectionRef} className="relative w-full overflow-hidden pb-0 -mb-0 z-50" style={{ backgroundColor: '#e1e2dc' }}>
       {/* Grey background container - covers both content and SVG */}
-      <div className="absolute inset-0 bg-zinc-100"></div>
+      <div className="absolute inset-0" style={{ backgroundColor: '#e1e2dc' }}></div>
       
       <div className="relative z-10">
         <div className="ml-[150px] mr-[150px] pt-24 pb-0 w-[calc(100%-300px)] mb-0">
@@ -118,11 +112,11 @@ export default function WorkSection() {
           </div>
         </div>
 
-        {/* Work SVG below text and box - with parallax and bottom crop, full width */}
+        {/* Work SVG below text and box - with parallax, full width */}
         <div 
           ref={svgRef}
           className="w-full overflow-hidden mb-0 pb-0 mt-0 relative"
-          style={{ clipPath: "inset(0 0 25% 0)", marginTop: "-1px" }}
+          style={{ clipPath: "inset(0 0 20% 0)", transform: 'translateY(20%)' }}
         >
           <Image
             src="/work.svg"
@@ -130,7 +124,7 @@ export default function WorkSection() {
             width={1886}
             height={1000}
             priority={false}
-            className="w-full h-auto select-none pointer-events-none"
+            className="w-full h-auto select-none pointer-events-none block m-0 p-0"
           />
         </div>
       </div>
