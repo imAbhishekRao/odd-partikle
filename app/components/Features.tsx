@@ -21,7 +21,7 @@ const features: Feature[] = [
 export default function Features() {
   return (
     <section id="features" className="w-full">
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-[75px] py-16">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Features</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (

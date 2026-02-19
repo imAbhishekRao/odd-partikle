@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function ImageCollage() {
   return (
-    <section className="relative w-full pt-0 pb-0 z-50 -mt-[1px]" style={{ backgroundColor: '#e1e2dc' }}>
-      <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
+    <section className="relative w-full pt-0 pb-0 z-50 -mt-[1px] bg-white">
+      <div className="ml-[75px] mr-[75px] w-[calc(100%-150px)]">
         {/* Images Row */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center mb-12 md:mb-16">
           {/* Landscape image */}
@@ -80,20 +80,22 @@ export default function ImageCollage() {
         {/* Introductory Text */}
         <div className="text-center mb-12 md:mb-16">
           <p className="text-[18px] leading-[1.6] text-black max-w-4xl mx-auto">
-            By digging deep, asking the right questions, and aligning on what truly matters, we offer a glimpse into our collaborative discovery sessions with the leadership teams at TARC and GD Goenka.
+            A sneak peek into our collaborative discovery sessions with our clients' leadership teams.
           </p>
         </div>
 
-        {/* Main Heading */}
-        <div className="text-center mt-16 md:mt-24 mb-16 md:mb-24">
-          <h2 className="text-[42px] leading-[1.25] text-[#b3b3b3]">
-            <span className="text-black font-medium">Let's Find Your Odd</span>
-          </h2>
-        </div>
+        {/* Grey section starts from Let's Find Your Odd */}
+        <div className="bg-[#e1e2dc] -mx-[75px] px-[75px] pt-16 md:pt-20 pb-8 md:pb-10">
+          {/* Main Heading */}
+          <div className="text-center mb-4 md:mb-6">
+            <h2 className="text-[42px] leading-[1.25] text-[#b3b3b3]">
+              <span className="text-black font-medium">Let's Find Your Odd</span>
+            </h2>
+          </div>
 
-        {/* Footer Section */}
-        <footer className="mt-16 md:mt-20 pt-8 border-t border-black">
-          <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
+          {/* Footer Section */}
+          <footer className="pt-4 border-t border-black">
+            <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
             {/* Left Side - Navigation Links */}
             <div className="flex flex-col md:flex-row gap-8 md:gap-32">
               <div className="flex flex-col gap-2">
@@ -122,23 +124,26 @@ export default function ImageCollage() {
                 </a>
               </div>
             </div>
-            {/* Right Side - Logo */}
-            <Image
-              src="/Oddpartikle_logo.svg"
-              alt="Oddpartikle Logo"
-              width={246}
-              height={41}
-              className="h-8 w-auto"
-            />
-          </div>
+            {/* Right Side - Logo - same right margin as site content */}
+            <div className="flex justify-end">
+              <Image
+                src="/Oddpartikle_logo.svg"
+                alt="Oddpartikle Logo"
+                width={246}
+                height={41}
+                className="h-8 w-auto"
+              />
+            </div>
+            </div>
 
-          {/* Bottom Section - Copyright */}
-          <div className="mt-24 md:mt-32 pb-4 md:pb-6">
-            <p className="text-black text-sm md:text-base font-normal">
-              ©Oddpartikle
-            </p>
-          </div>
-        </footer>
+            {/* Bottom Section - Copyright */}
+            <div className="mt-24 md:mt-32 pb-4 md:pb-6">
+              <p className="text-black text-sm md:text-base font-normal">
+                ©Oddpartikle
+              </p>
+            </div>
+          </footer>
+        </div>
       </div>
     </section>
   );

@@ -37,7 +37,7 @@ export default function Intro({ onBlackDotClick }: IntroProps) {
       ref={sectionRef}
       className={`${isRelative ? "relative" : "sticky top-0"} w-full bg-white min-h-screen flex items-center z-40`}
     >
-      <div className="py-24 md:py-28 ml-[150px] mr-[150px] w-[calc(100%-300px)]">
+      <div className="py-24 md:py-28 ml-[75px] mr-[75px] w-[calc(100%-150px)]">
         <p className="text-[42px] leading-[1.25] text-[#b3b3b3] ">
           <span className="text-black font-medium">Oddpartikle</span>{" "}is an independent design and technology studio with a clear purpose: to craft communication that builds authentic and meaningful connections with people.
         </p>

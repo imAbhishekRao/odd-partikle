@@ -98,7 +98,7 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
               style={{ transform: 'translate(-50%, -50%)' }}
             />
           </button>
-          <div className="relative w-full max-w-4xl px-6 py-0">
+          <div className="relative w-full max-w-4xl px-[75px] py-0">
             {/* Main Text */}
             <p className="text-[28px] leading-[1.4] md:text-[40px] md:leading-tight text-[#1a1a1a]">
               It started with a{" "}

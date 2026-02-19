@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <section className="relative w-full bg-white py-24 md:py-28 z-50">
-      <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
+      <div className="ml-[75px] mr-[75px] w-[calc(100%-150px)]">
         <p className="text-[42px] leading-[1.25] text-[#b3b3b3]">
           We help you to{" "}
           <span className="text-black font-medium">
