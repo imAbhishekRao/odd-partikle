@@ -49,14 +49,6 @@ export default function Intro({ onBlackDotClick }: IntroProps) {
         </a>
       </div>
 
-      {/* top-right black dot - clickable with larger cursor area */}
-      <button
-        onClick={onBlackDotClick}
-        className="absolute right-[150px] top-[100px] p-4 -m-4 cursor-large"
-        aria-label="Open animated section"
-      >
-        <span className="h-3 w-3 rounded-full bg-black hover:opacity-70 transition-opacity block" />
-      </button>
     </section>
   );
 }

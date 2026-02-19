@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface AnimatedSectionProps {
   isOpen: boolean;
@@ -9,9 +11,17 @@ interface AnimatedSectionProps {
 }
 
 export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProps) {
+  const router = useRouter();
   const [showCircle, setShowCircle] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [scale, setScale] = useState(1);
+
+  const handleLinkClick = (path: string) => {
+    onClose();
+    setTimeout(() => {
+      router.push(path);
+    }, 300);
+  };
 
   useEffect(() => {
     // Calculate scale needed to cover entire viewport
@@ -65,14 +75,14 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden">
+    <div className="fixed inset-0 z-[102] overflow-hidden">
       {/* Content Section - appears immediately */}
       {showContent && (
         <div className="relative z-30 w-full h-full flex items-center justify-center bg-black">
           {/* Close button - centered on the black dot center point */}
           <button
             onClick={onClose}
-            className="fixed z-40 hover:opacity-70 transition-opacity"
+            className="fixed z-[103] hover:opacity-70 transition-opacity"
             style={{ 
               right: '120px', 
               top: '106px',
@@ -92,45 +102,40 @@ export default function AnimatedSection({ isOpen, onClose }: AnimatedSectionProp
             {/* Main Text */}
             <p className="text-[28px] leading-[1.4] md:text-[40px] md:leading-tight text-[#1a1a1a]">
               It started with a{" "}
-              <a
-                href="#thought"
-                onClick={onClose}
+              <button
+                onClick={() => handleLinkClick("/#thought")}
                 className="text-white font-semibold underline hover:opacity-70 transition-opacity cursor-pointer"
               >
                 thought
-              </a>{" "}
+              </button>{" "}
               — what if we did things differently? One idea led to another, and our{" "}
-              <a
-                href="#work"
-                onClick={onClose}
+              <button
+                onClick={() => handleLinkClick("/#work")}
                 className="text-white font-semibold underline hover:opacity-70 transition-opacity cursor-pointer"
               >
                 work
-              </a>{" "}
+              </button>{" "}
               began to take shape. Along the way, we asked deeper questions{" "}
-              <a
-                href="#about"
-                onClick={onClose}
+              <button
+                onClick={() => handleLinkClick("/about")}
                 className="text-white font-semibold underline hover:opacity-70 transition-opacity cursor-pointer"
               >
                 about
-              </a>{" "}
+              </button>{" "}
               why we create — questions that led to meaningful{" "}
-              <a
-                href="#contact"
-                onClick={onClose}
+              <button
+                onClick={() => handleLinkClick("/#contact")}
                 className="text-white font-semibold underline hover:opacity-70 transition-opacity cursor-pointer"
               >
                 contact
-              </a>{" "}
+              </button>{" "}
               with those who shared the vision, and a sense of purpose in a{" "}
-              <a
-                href="#career"
-                onClick={onClose}
+              <button
+                onClick={() => handleLinkClick("/#career")}
                 className="text-white font-semibold underline hover:opacity-70 transition-opacity cursor-pointer"
               >
                 career
-              </a>{" "}
+              </button>{" "}
               that is always more than just a job.
             </p>
           </div>
