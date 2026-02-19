@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WorkSvg() {
   return (
-    <section className="relative w-full bg-white z-50">
+    <section className="relative w-full bg-white z-50 mt-28">
       <div className="w-full bg-white py-0">
         <div className="ml-[75px] mr-[75px] w-[calc(100%-150px)]">
           <div className="relative w-full h-[700px]">

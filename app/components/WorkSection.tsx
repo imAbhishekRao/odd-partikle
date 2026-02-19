@@ -80,9 +80,9 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full overflow-hidden pb-0 -mb-0 z-50 bg-white">
+    <section ref={sectionRef} className="relative w-full overflow-hidden pb-0 -mb-0 z-50 bg-[#e1e2dc]">
       {/* Background container - covers both content and SVG */}
-      <div className="absolute inset-0 bg-white"></div>
+      <div className="absolute inset-0 bg-[#e1e2dc]"></div>
       
       <div className="relative z-10">
         <div className="ml-[75px] mr-[75px] pt-24 pb-0 w-[calc(100%-150px)] mb-0">

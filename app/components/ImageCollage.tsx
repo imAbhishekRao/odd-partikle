@@ -84,16 +84,18 @@ export default function ImageCollage() {
           </p>
         </div>
 
-        {/* Main Heading */}
-        <div className="text-center mt-8 md:mt-12 mb-16 md:mb-24">
-          <h2 className="text-[42px] leading-[1.25] text-[#b3b3b3]">
-            <span className="text-black font-medium">Let's Find Your Odd</span>
-          </h2>
-        </div>
+        {/* Grey section starts from Let's Find Your Odd */}
+        <div className="bg-[#e1e2dc] -mx-[75px] px-[75px] pt-16 md:pt-20 pb-8 md:pb-10">
+          {/* Main Heading */}
+          <div className="text-center mb-4 md:mb-6">
+            <h2 className="text-[42px] leading-[1.25] text-[#b3b3b3]">
+              <span className="text-black font-medium">Let's Find Your Odd</span>
+            </h2>
+          </div>
 
-        {/* Footer Section */}
-        <footer className="mt-16 md:mt-20 pt-8 border-t border-black bg-[#e1e2dc] -mx-[75px] px-[75px] pb-8 md:pb-10">
-          <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
+          {/* Footer Section */}
+          <footer className="pt-4 border-t border-black">
+            <div className="flex flex-col md:flex-row justify-between gap-8 items-start">
             {/* Left Side - Navigation Links */}
             <div className="flex flex-col md:flex-row gap-8 md:gap-32">
               <div className="flex flex-col gap-2">
@@ -132,15 +134,16 @@ export default function ImageCollage() {
                 className="h-8 w-auto"
               />
             </div>
-          </div>
+            </div>
 
-          {/* Bottom Section - Copyright */}
-          <div className="mt-24 md:mt-32 pb-4 md:pb-6">
-            <p className="text-black text-sm md:text-base font-normal">
-              ©Oddpartikle
-            </p>
-          </div>
-        </footer>
+            {/* Bottom Section - Copyright */}
+            <div className="mt-24 md:mt-32 pb-4 md:pb-6">
+              <p className="text-black text-sm md:text-base font-normal">
+                ©Oddpartikle
+              </p>
+            </div>
+          </footer>
+        </div>
       </div>
     </section>
   );
