@@ -80,12 +80,12 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full overflow-hidden pb-0 -mb-0 z-50" style={{ backgroundColor: '#e1e2dc' }}>
-      {/* Grey background container - covers both content and SVG */}
-      <div className="absolute inset-0" style={{ backgroundColor: '#e1e2dc' }}></div>
+    <section ref={sectionRef} className="relative w-full overflow-hidden pb-0 -mb-0 z-50 bg-white">
+      {/* Background container - covers both content and SVG */}
+      <div className="absolute inset-0 bg-white"></div>
       
       <div className="relative z-10">
-        <div className="ml-[150px] mr-[150px] pt-24 pb-0 w-[calc(100%-300px)] mb-0">
+        <div className="ml-[75px] mr-[75px] pt-24 pb-0 w-[calc(100%-150px)] mb-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-0 pb-0">
             {/* Left text block with stepped indentation */}
             <div ref={textRef} className="space-y-0.5 text-black text-[42px] leading-[1.25] font-normal transition-transform duration-75 ease-out">
@@ -131,7 +131,7 @@ export default function WorkSection() {
 
       {/* Bottom "WORK" text - very large, faint, white */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none z-0">
-        <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
+        <div className="ml-[75px] mr-[75px] w-[calc(100%-150px)]">
           <div className="text-white text-[400px] md:text-[500px] lg:text-[600px] font-bold leading-none opacity-[0.08] whitespace-nowrap -mb-20">
             WORK
           </div>

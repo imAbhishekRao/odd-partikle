@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function WorkSvg() {
   return (
     <section className="relative w-full bg-white z-50">
-      <div className="w-full bg-white py-12 md:py-16 lg:py-24">
-        <div className="ml-[150px] mr-[150px] w-[calc(100%-300px)]">
+      <div className="w-full bg-white py-0">
+        <div className="ml-[75px] mr-[75px] w-[calc(100%-150px)]">
           <div className="relative w-full h-[700px]">
             <Image
               src="/Project Cover 800x600-01.jpg"

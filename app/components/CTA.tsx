@@ -1,7 +1,7 @@
 export default function CTA() {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-6xl px-6 py-16 text-center rounded-2xl border border-black/10 dark:border-white/10 bg-background shadow-sm">
+      <div className="mx-auto max-w-6xl px-[75px] py-16 text-center rounded-2xl border border-black/10 dark:border-white/10 bg-background shadow-sm">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
           Ready to build your homepage?
         </h2>

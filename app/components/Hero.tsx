@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="w-full bg-gradient-to-b from-background to-black/[.02] dark:to-white/[.03]">
-      <div className="mx-auto max-w-6xl px-6 py-20 text-center md:text-left grid gap-8 md:grid-cols-2 md:items-center">
+      <div className="mx-auto max-w-6xl px-[75px] py-20 text-center md:text-left grid gap-8 md:grid-cols-2 md:items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
             Better care with modern tooling
